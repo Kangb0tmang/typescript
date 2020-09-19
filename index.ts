@@ -20,9 +20,22 @@ const phone: any = 'Google Pixel 2 XL';
 const android: any = 11;
 
 // Functions in Typescript
-const sayWord = (word: string): string => {
-  console.log(word);
+const saySomething = (something: string): string => {
+  console.log(something);
+  return something;
+};
+saySomething('Hiyo');
+
+// Optional Params
+const sayWord = (word?: string): string => {
+  console.log(word || 'Hello');
+  return word || 'Hello';
+};
+sayWord();
+
+// Default Params
+const speak = (word = 'Greetings', ...otherThings: string[]): string => {
+  console.log(otherThings);
   return word;
 };
-
-sayWord('hiyo');
+speak('Michael', 'Mike');
