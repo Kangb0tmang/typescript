@@ -18,3 +18,11 @@ const job: Job = Job.Dev;
 // Any
 const phone: any = 'Google Pixel 2 XL';
 const android: any = 11;
+
+// Functions in Typescript
+const sayWord = (word: string): string => {
+  console.log(word);
+  return word;
+};
+
+sayWord('hiyo');
