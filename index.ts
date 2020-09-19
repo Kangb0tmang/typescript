@@ -40,12 +40,24 @@ const speak = (word = 'Greetings', ...otherThings: string[]): string => {
 };
 speak('Michael', 'Mike');
 
-// Implicit types in TypeScript
+// Implicit Types in TypeScript
 let newName = 'Ichigo';
 newName = 'Rukia';
-newName = 9000;
-console.log(newName);
 
 // Gets type from initial declaration
 let newNameTwo = newName;
-newNameTwo = 10;
+// newNameTwo = false;
+
+// Union Types with |
+const makeMargin = (x: string | number): string => {
+  return `margin: ${x}px`;
+};
+makeMargin(10);
+makeMargin('10');
+
+// Null Types
+let dog: string | null = 'Bolt';
+dog = null;
+dog = 'Peanut';
+dog = undefined;
+dog = 'Kevin';
