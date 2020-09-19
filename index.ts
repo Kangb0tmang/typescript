@@ -19,7 +19,7 @@ const job: Job = Job.Dev;
 const phone: any = 'Google Pixel 2 XL';
 const android: any = 11;
 
-// Functions in Typescript
+// Functions in TypeScript
 const saySomething = (something: string): string => {
   console.log(something);
   return something;
@@ -39,3 +39,13 @@ const speak = (word = 'Greetings', ...otherThings: string[]): string => {
   return word;
 };
 speak('Michael', 'Mike');
+
+// Implicit types in TypeScript
+let newName = 'Ichigo';
+newName = 'Rukia';
+newName = 9000;
+console.log(newName);
+
+// Gets type from initial declaration
+let newNameTwo = newName;
+newNameTwo = 10;
