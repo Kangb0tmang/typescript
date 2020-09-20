@@ -103,3 +103,24 @@ enum SomeType {
 const createMoreContent = (contentType: SomeType) => {};
 createMoreContent(SomeType.Quiz);
 console.log('SomeType.Quiz', SomeType.Quiz);
+
+// Classes
+class Team {
+  teamName: string;
+  // public teamName: string; same as above
+  // private teamName: string; prevents usage outside of class
+  // readonly teamName: string; prevents from being changed
+
+  constructor(teamName) {
+    this.teamName = teamName;
+  }
+
+  score(): string {
+    console.log(this.teamName);
+    return 'AND 1!';
+  }
+}
+
+const lakers = new Team('Los Angeles Lakers');
+lakers.score();
+lakers.teamName;
