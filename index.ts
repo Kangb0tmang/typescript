@@ -61,3 +61,22 @@ dog = null;
 dog = 'Peanut';
 dog = undefined;
 dog = 'Kevin';
+
+// Interfaces
+interface Person {
+  name: string;
+  age?: number; // can add '?' as an optional param
+}
+
+const sayName = ({ name, age }: Person): string => {
+  console.log(name);
+  return name;
+};
+sayName({ name: 'Nathan Drake', age: 30 });
+
+// This works as well
+// const sayName = ({ name, age }: Person): string => {
+//   console.log(name);
+//   return { name, age };
+// };
+// sayName({ name: 'Nathan Drake', age: 30 });
