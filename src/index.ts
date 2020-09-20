@@ -127,3 +127,16 @@ const ouputInput = <T>(arg: T): T => {
 };
 ouputInput('good day to you');
 ouputInput(99);
+
+// Duck Typing
+class Dancer implements Person {
+  name: string;
+  age: number;
+}
+
+let ElNino: Person = new Dancer();
+const somebody = {
+  name: 'Someone',
+  years: 33,
+};
+ElNino = somebody;
