@@ -1,17 +1,18 @@
 {
-  "devDependencies": {
-    "parcel-bundler": "1.9.4",
-    "parcel-plugin-typescript": "^1.0.0",
-    "typescript": "^4.0.3"
-  },
-  "name": "typescript",
+  "name": "typescript-tut",
   "description": "Level Up Tutorials - [Level 1 Typescript](https://www.leveluptutorials.com/tutorials/level-1-typescript)",
   "version": "1.0.0",
   "main": "index.js",
   "dependencies": {},
   "scripts": {
-    "start": "parcel index.html"
+    "start": "parcel index.html",
+    "tsc": "tsc"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "parcel-bundler": "1.9.4",
+    "parcel-plugin-typescript": "^1.0.0",
+    "typescript": "^4.0.3"
+  }
 }

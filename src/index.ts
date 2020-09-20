@@ -1,4 +1,4 @@
-import { Person } from './src/Interfaces';
+import { Person } from './Interfaces';
 
 const isOpen: boolean = false;
 const myName: string = 'Jon';
