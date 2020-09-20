@@ -80,3 +80,26 @@ sayName({ name: 'Nathan Drake', age: 30 });
 //   return { name, age };
 // };
 // sayName({ name: 'Nathan Drake', age: 30 });
+
+// Enums
+// Numeric Enum
+enum Type {
+  Video, // 0
+  BlogPost, // 1
+  Quiz, // 2
+}
+
+const createContent = (contentType: Type) => {};
+createContent(Type.Quiz);
+console.log('Type.Quiz', Type.Quiz);
+
+// String Enum
+enum SomeType {
+  Video = 'VIDEO',
+  BlogPost = 'BLOG_POST',
+  Quiz = 'QUIZ',
+}
+
+const createMoreContent = (contentType: SomeType) => {};
+createMoreContent(SomeType.Quiz);
+console.log('SomeType.Quiz', SomeType.Quiz);
