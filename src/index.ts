@@ -120,3 +120,10 @@ class Team {
 const lakers = new Team('Los Angeles Lakers');
 lakers.score();
 lakers.teamName;
+
+// Generics
+const ouputInput = <T>(arg: T): T => {
+  return arg;
+};
+ouputInput('good day to you');
+ouputInput(99);
