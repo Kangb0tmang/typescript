@@ -1,3 +1,5 @@
+import { Person } from './src/Interfaces';
+
 const isOpen: boolean = false;
 const myName: string = 'Jon';
 const myAge: number = 28;
@@ -61,12 +63,6 @@ dog = null;
 dog = 'Peanut';
 dog = undefined;
 dog = 'Kevin';
-
-// Interfaces
-interface Person {
-  name: string;
-  age?: number; // can add '?' as an optional param
-}
 
 const sayName = ({ name, age }: Person): string => {
   console.log(name);
